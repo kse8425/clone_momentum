@@ -1,9 +1,7 @@
-const bg = document.querySelector(".js-bg");
-const img = bg.querySelector("img");
-
+const body = document.querySelector("body");
 const unslashAPIkey = "KDBrxEKZBr265JRUMrMcl-7cto9DHsvgkbqZPhahSKQ";
 const randomNum1 = Math.floor(Math.random() * 10);
-const randomNum2 = Math.floor(Math.random() * 100);
+const randomNum2 = Math.floor(Math.random() * 10);
 
 function init() {
   fetch(
@@ -14,14 +12,15 @@ function init() {
       return result.json();
     })
     .then((array) => {
-      console.log(array);
       // const url = array.results[randomNum1].urls; //raw , full ,regular
+      const img = document.createElement("img");
       const url = array.urls; //raw , full ,regular
+      img.className = "bg";
       img.src = url.full;
+      //img.src = "./img/1.jpg";
       img.addEventListener("load", function (a) {
-        console.log(a, "loading end");
+        body.appendChild(img);
       });
-      console.log(url);
     });
 }
 init();
