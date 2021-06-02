@@ -1,4 +1,4 @@
 # clone_momentum
 clone momentum of nomadcords
 
-thin is personal project for pratice JS.
+thin is personal project for practice JS.
