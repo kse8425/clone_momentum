@@ -7,8 +7,8 @@ let todoObj = {};
 let id = 0;
 
 function init() {
-  printTodo();
   todoForm.addEventListener("submit", handleSubmit);
+  printTodo();
 }
 
 function printTodo() {

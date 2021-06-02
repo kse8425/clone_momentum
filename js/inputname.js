@@ -8,7 +8,7 @@ function init() {
 }
 
 function handleSubmit(event) {
-  //   event.preventDefault();
+  // event.preventDefault();
   setName(tagInput.value);
 }
 
