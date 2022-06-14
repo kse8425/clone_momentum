@@ -13,7 +13,6 @@ function setClock() {
   clock.innerHTML = `${hours < 10 ? `0${hours}` : hours}:${
     min < 10 ? `0${min}` : min
   }`;
-  //}:${sec < 10 ? `0${sec}` : sec}`;
 }
 
 init();
